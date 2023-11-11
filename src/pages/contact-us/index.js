@@ -2,10 +2,7 @@ import React from 'react'
 
 const ContactPage = () => {
   return (
-    <div
-      className="min-h-screen flex flex-col items-center justify-center bg-cover relative font-poly"
-      style={{ backgroundImage: "url('/dinner.jpg')" }}
-    >
+    <>
       <div className="absolute top-0 left-0 w-full h-full opacity-20 bg-neutral-200"></div>
       <div className="text-white text-center relative ">
         <h1 className="text-2xl font-bold m-4">Contact Us</h1>
@@ -35,7 +32,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

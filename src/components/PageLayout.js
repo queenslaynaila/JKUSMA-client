@@ -83,10 +83,7 @@ const PageLayout = () => {
   }
 
   return (
-    <div
-      className="min-h-screen flex items-center justify-center bg-cover"
-      style={{ backgroundImage: "url('/dinner.jpg')" }}
-    >
+    <div>
       <div className="absolute top-0 left-0 w-full h-full opacity-20 bg-neutral-200"></div>
       <ToastContainer />
       <div className="text-white text-center">
@@ -117,7 +114,7 @@ const PageLayout = () => {
           <input
             type="email"
             placeholder="Enter your email"
-            className="px-4 py-2 border rounded-md mr-2 text-black"
+            className="px-4 py-2 border rounded-md mr-2 text-black z-20"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />

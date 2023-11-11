@@ -2,10 +2,7 @@ import React from 'react'
 
 const PaymentPage = () => {
   return (
-    <div
-      className="min-h-screen flex items-center justify-center bg-cover relative font-poly"
-      style={{ backgroundImage: "url('/dinner.jpg')" }}
-    >
+    <>
       <div className="absolute top-0 left-0 w-full h-full opacity-20 bg-neutral-400"></div>
 
       <div className="text-white text-center relative">
@@ -27,7 +24,7 @@ const PaymentPage = () => {
 
         <p className="text-lg mt-4 ">Thank you for your generosity!</p>
       </div>
-    </div>
+    </>
   )
 }
 

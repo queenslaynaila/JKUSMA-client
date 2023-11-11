@@ -4,7 +4,12 @@ const MainComponentLayout = ({ children }) => {
   return (
     <div>
       <NavBar />
-      {children}
+      <div
+        className="min-h-screen flex flex-col items-center justify-center bg-cover relative font-poly"
+        style={{ backgroundImage: "url('/dinner.jpg')" }}
+      >
+        {children}
+      </div>
       <Footer />
     </div>
   )
