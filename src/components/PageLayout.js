@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+ 
 import { useRouter } from 'next/router'
-import Link from 'next/link'
+ 
 const PageLayout = () => {
   const [dinnerTime, setDinnerTime] = useState(false)
   const [days, setDays] = useState(0)
@@ -45,53 +44,12 @@ const PageLayout = () => {
     return () => clearInterval(interval)
   }, [])
 
-  const notifyError = () =>
-    toast.error('An error occured', { theme: 'colored' })
-  const notifySuccess = () =>
-    toast.success('Email received', {
-      position: 'top-center',
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: 'colored',
-      style: {
-        backgroundColor: '#FFCE3C',
-        color: '#000',
-      },
-    })
-  const handleNotifyClick = (e) => {
-    const data = { email: email }
-    e.preventDefault()
-    const apiUrl = 'http://[::1]:3001/notifications'
-    fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-      .then((response) => {
-        if (response.ok) {
-          notifySuccess()
-          console.log('Email notification sent successfully!')
-        } else {
-          notifyError()
-          console.error('Failed to send email notification.')
-        }
-      })
-      .catch((error) => {
-        notifyError()
-        console.error('An error occurred:', error)
-      })
-  }
+ 
 
   return (
     <div>
       <div className="absolute top-0 left-0 w-full h-full opacity-20 bg-neutral-300"></div>
-      <ToastContainer />
+    
       <div className="text-white text-center">
         <h1 className="text-4xl font-bold mb-4">
           Annual JKUSMA Dinner and Fundraising Gala
@@ -118,21 +76,7 @@ const PageLayout = () => {
             <span className="text-sm">Second{seconds !== 1 && 's'}</span>
           </div>
         </div>
-        <div className="mb-8">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="px-4 py-2 border rounded-md mr-2 text-black z-20"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <button
-            className="px-6 py-2 bg-white text-purple-600 rounded-md cursor-pointer"
-            onClick={handleNotifyClick}
-          >
-            Notify Me
-          </button>
-        </div>
+       
 
         <p className="text-lg">
           Launch of the Me For You Fund on November 12, 2023, at 5:00 PM
