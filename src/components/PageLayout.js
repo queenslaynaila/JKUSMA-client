@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { useRouter } from 'next/router'
- import Link from 'next/link'
+import Link from 'next/link'
 const PageLayout = () => {
   const [dinnerTime, setDinnerTime] = useState(false)
   const [days, setDays] = useState(0)
@@ -143,8 +143,6 @@ const PageLayout = () => {
         >
           About Me For You
         </button>
-        
-        
       </div>
     </div>
   )
