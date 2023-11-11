@@ -1,40 +1,38 @@
-import React from 'react'
+import React from 'react';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <div className="absolute bottom-0 left-0 p-4 text-white z-10 font-poly">
-      <span className="mr-2">
+    <footer className=" text-white py-4 fixed bottom-0 left-0 w-full">
+      <div className="container mx-auto text-left">
         <a
           href="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline"
+          className="hover:underline mr-4"
         >
           Facebook
         </a>
-      </span>
-      <span className="mr-2">/</span>
-      <span className="mr-2">
+        <span className="text-gray-500">/</span>
         <a
           href="https://www.youtube.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline"
+          className="hover:underline mx-4"
         >
           YouTube
         </a>
-      </span>
-      <span className="mr-2">/</span>
-      <span className="mr-2">
+        <span className="text-gray-500">/</span>
         <a
           href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline"
+          className="hover:underline ml-4"
         >
           Instagram
         </a>
-      </span>
-    </div>
-  )
-}
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -14,8 +14,14 @@ const MobileMenu = ({ isOpen, toggle }) => {
           </Link>
         </li>
         <li>
+          <Link href="/meforyou" onClick={toggle}>
+            Me For You
+          </Link>
+        </li>
+        <li>
           <Link href="/pay">Payment</Link>
         </li>
+
         <li>
           <Link href="/contact-us">Contact Us</Link>
         </li>
