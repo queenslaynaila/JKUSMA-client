@@ -12,23 +12,23 @@ const MeForYou = () => {
             </h2>
             <p className="py-5 text-base md:text-sm tracking-wide sm:leading-10 leading-8">
               For years, many students have faced a tough challenge: school fees
-              holding them back from chasing their dreams. It&apos;s like a roadblock
-              that&apos;s kept them from moving forward in their studies. Recently,
-              one of our coursemates, who despite being the brightest of the
-              bunch,could not raise the fees in order to sit for the final
-              exam.In the spirit of brotherhood, we, the fellow students,
-              decided to raise money to cater for the fee deficit.
+              holding them back from chasing their dreams. It&apos;s like a
+              roadblock that&apos;s kept them from moving forward in their
+              studies. Recently, one of our coursemates, who despite being the
+              brightest of the bunch,could not raise the fees in order to sit
+              for the final exam.In the spirit of brotherhood, we, the fellow
+              students, decided to raise money to cater for the fee deficit.
               <br />
               <br />
               This was achieved by the 100 bob challenge. By virtue of each of
               us contributing 100 shilings,the fee was cleared. Not everyone is
               as lucky to continuously afford tuition fees. As such,we want to
               change that story. We imagine a Kenya where these students can
-              finally pursue their dreams without worrying about money. We&apos;re
-              starting a special fund, and we need partners like you to help
-              make this change happen. Your support can be the key that unlocks
-              a brighter future for these students. Let&apos;s rewrite their story
-              together, one filled with possibilities and success.
+              finally pursue their dreams without worrying about money.
+              We&apos;re starting a special fund, and we need partners like you
+              to help make this change happen. Your support can be the key that
+              unlocks a brighter future for these students. Let&apos;s rewrite
+              their story together, one filled with possibilities and success.
             </p>
           </div>
         </div>

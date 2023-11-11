@@ -11,14 +11,15 @@ export default function index() {
             </h2>
             <p className="py-5 text-base md:text-sm tracking-wide sm:leading-10 leading-8">
               Jomo Kenyatta University of Agriculture and Technology Medical
-              Students&apos; Association (JKUSMA) is a local organisation of medical
-              students pursuing Bachelor of Medicine and Bachelor of Surgery.
+              Students&apos; Association (JKUSMA) is a local organisation of
+              medical students pursuing Bachelor of Medicine and Bachelor of
+              Surgery.
               <br />
               <br />
               It is a non-political, non religious and independent organization
-              affiliated with Medical Students&apos; Association of Kenya (MSAKE) and
-              the International Federation of medical students&apos; Association
-              (IFMSA).
+              affiliated with Medical Students&apos; Association of Kenya
+              (MSAKE) and the International Federation of medical students&apos;
+              Association (IFMSA).
               <br />
               <br />
               The association has a sole and major role of safeguarding the

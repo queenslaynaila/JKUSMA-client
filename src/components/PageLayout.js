@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
- 
 import { useRouter } from 'next/router'
- 
+import Link from 'next/link'
 const PageLayout = () => {
   const [dinnerTime, setDinnerTime] = useState(false)
   const [days, setDays] = useState(0)
@@ -12,6 +11,7 @@ const PageLayout = () => {
   const router = useRouter()
   const handleAboutMeForYouClick = (e) => {
     e.preventDefault()
+    console.log('About Me For You button clicked');
     router.push('/meforyou')
   }
 
@@ -44,12 +44,10 @@ const PageLayout = () => {
     return () => clearInterval(interval)
   }, [])
 
- 
-
   return (
     <div>
       <div className="absolute top-0 left-0 w-full h-full opacity-20 bg-neutral-300"></div>
-    
+
       <div className="text-white text-center">
         <h1 className="text-4xl font-bold mb-4">
           Annual JKUSMA Dinner and Fundraising Gala
@@ -76,7 +74,6 @@ const PageLayout = () => {
             <span className="text-sm">Second{seconds !== 1 && 's'}</span>
           </div>
         </div>
-       
 
         <p className="text-lg">
           Launch of the Me For You Fund on November 12, 2023, at 5:00 PM
@@ -87,6 +84,7 @@ const PageLayout = () => {
         >
           About Me For You
         </button>
+        
       </div>
     </div>
   )

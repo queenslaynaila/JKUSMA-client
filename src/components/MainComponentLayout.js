@@ -2,7 +2,7 @@ import NavBar from './Navbar'
 import Footer from './Footer'
 const MainComponentLayout = ({ children }) => {
   return (
-    <div>
+    <>
       <NavBar />
       <div
         className="min-h-screen flex flex-col items-center justify-center bg-cover relative font-poly"
@@ -10,7 +10,7 @@ const MainComponentLayout = ({ children }) => {
       >
         {children}
       </div>
-    </div>
+    </>
   )
 }
 
